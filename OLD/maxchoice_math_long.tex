@@ -1,0 +1,52 @@
+\begin{table}[!h]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effect of School performance on MaxChoice: Math}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+\multicolumn{5}{l}{Panel A: Benchmark model} \\
+            &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Math score          &               0.226** &               0.324***&               0.285** &               0.349***\\
+                    &             (0.110)   &             (0.107)   &             (0.117)   &             (0.120)   \\
+Female              &              -0.034   &              -0.041   &              -0.046   &              -0.040   \\
+                    &             (0.037)   &             (0.042)   &             (0.034)   &             (0.037)   \\
+Age                 &               0.041***&               0.026   &               0.049***&               0.019   \\
+                    &             (0.013)   &             (0.026)   &             (0.014)   &             (0.032)   \\
+Payoff              &               0.012   &               0.014   &               0.006   &               0.003   \\
+                    &             (0.014)   &             (0.014)   &             (0.014)   &             (0.014)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.               &                       &                       &                       &                       \\
+Obs                 &                 169   &                 169   &                 168   &                 168   \\
+AIC                 &                 180   &                 209   &                 225   &                 255   \\
+BIC                 &                 221   &                 299   &                 346   &                 430   \\
+\midrule \midrule
+\multicolumn{5}{l}{Panel B: Including MaxChoice baseline} \\
+&\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Math score          &               0.218** &               0.308***&               0.285** &               0.335***\\
+                    &             (0.109)   &             (0.107)   &             (0.118)   &             (0.121)   \\
+MaxChoice, baseline &               0.104   &               0.104   &               0.212** &               0.172*  \\
+                    &             (0.086)   &             (0.089)   &             (0.085)   &             (0.093)   \\
+Female              &              -0.031   &              -0.040   &              -0.043   &              -0.040   \\
+                    &             (0.037)   &             (0.042)   &             (0.034)   &             (0.036)   \\
+Age                 &               0.036***&               0.026   &               0.040***&               0.022   \\
+                    &             (0.012)   &             (0.026)   &             (0.014)   &             (0.032)   \\
+Payoff              &               0.011   &               0.014   &               0.003   &               0.001   \\
+                    &             (0.014)   &             (0.014)   &             (0.014)   &             (0.014)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.               &                       &                       &                       &                       \\
+Obs                 &                 169   &                 169   &                 168   &                 168   \\
+AIC                 &                 182   &                 210   &                 225   &                 256   \\
+BIC                 &                 226   &                 304   &                 350   &                 434   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Margins from GLM for binomial family estimations (Logit link). Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize  \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\label{tab:maxchoice_math_long}
+\end{table}

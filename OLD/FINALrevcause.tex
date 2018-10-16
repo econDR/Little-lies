@@ -1,0 +1,39 @@
+\begin{table}[!h]
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Inspecting reverse causality: effect of MeanRoll on Math performance}
+\begin{threeparttable}\centering
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+            &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+            &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+MeanRoll, baseline  &               0.007   &               0.034   &               0.014   &               0.018   \\
+                    &             (0.032)   &             (0.033)   &             (0.028)   &             (0.030)   \\
+Math, baseline      &                       &                       &               0.507***&               0.575***\\
+                    &                       &                       &             (0.089)   &             (0.097)   \\
+Female              &              -0.006   &               0.001   &              -0.017   &              -0.009   \\
+                    &             (0.027)   &             (0.027)   &             (0.023)   &             (0.024)   \\
+Age                 &              -0.007   &               0.026   &              -0.006   &               0.015   \\
+                    &             (0.012)   &             (0.021)   &             (0.010)   &             (0.015)   \\
+Payoff              &              -0.005   &              -0.006   &               0.001   &              -0.003   \\
+                    &             (0.008)   &             (0.008)   &             (0.008)   &             (0.008)   \\
+Constant            &               0.615***&               0.586***&               0.239   &              -0.049   \\
+                    &             (0.163)   &             (0.221)   &             (0.174)   &             (0.228)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.               &                0.32   &                0.45   &                0.48   &                0.61   \\
+Obs                 &                 168   &                 168   &                 164   &                 164   \\
+AIC                 &                -147   &                -154   &                -188   &                -204   \\
+BIC                 &                 -22   &                  14   &                 -61   &                 -34   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item \textit{Notes:} Dependent variable: Math score. OLS estimation. Robust standard errors in parentheses.
+\item \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:rev_cause}
+\end{table}

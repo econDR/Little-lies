@@ -1,0 +1,59 @@
+\begin{table}[!h]\centering
+	\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+	\caption{Effect of Altruism and School performance on MeanRoll: Math}
+	\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+		\toprule
+\multicolumn{5}{l}{Panel A: Benchmark model} \\
+&\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\ \midrule
+Math score  &               0.554** &               0.690** &               0.589*  &               0.718** \\
+            &             (0.274)   &             (0.288)   &             (0.308)   &             (0.338)   \\
+Altruism, baseline&              -0.365   &              -0.468*  &              -0.402*  &              -0.475   \\
+            &             (0.223)   &             (0.251)   &             (0.236)   &             (0.293)   \\
+Female    &              -0.102   &              -0.098   &              -0.131   &              -0.108   \\
+            &             (0.079)   &             (0.097)   &             (0.081)   &             (0.098)   \\
+Age    &               0.090***&               0.096*  &               0.101***&               0.068   \\
+            &             (0.026)   &             (0.056)   &             (0.031)   &             (0.064)   \\
+Payoff      &               0.022   &               0.026   &               0.008   &               0.001   \\
+            &             (0.030)   &             (0.034)   &             (0.034)   &             (0.039)   \\
+Constant    &              -0.749** &              -0.652   &              -0.762   &              -0.350   \\
+            &             (0.340)   &             (0.483)   &             (0.482)   &             (0.694)   \\
+School Dummies   &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies    &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies&                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.       &                0.14   &                0.20   &                0.29   &                0.36   \\
+Obs         &                 169   &                 169   &                 168   &                 168   \\
+AIC         &                 241   &                 258   &                 260   &                 271   \\
+BIC         &                 288   &                 352   &                 388   &                 443   \\
+		\midrule \midrule
+		\multicolumn{5}{l}{Panel B: Including MeanRoll baseline} \\
+		&\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Math score  &               0.534*  &               0.639** &               0.578*  &               0.668*  \\
+            &             (0.272)   &             (0.287)   &             (0.305)   &             (0.340)   \\
+Altruism, baseline&              -0.372*  &              -0.487*  &              -0.397*  &              -0.493*  \\
+            &             (0.219)   &             (0.249)   &             (0.227)   &             (0.292)   \\
+MeanRoll, baseline  &               0.093   &               0.115   &               0.201** &               0.161   \\
+            &             (0.087)   &             (0.093)   &             (0.093)   &             (0.111)   \\
+Female    &              -0.097   &              -0.094   &              -0.128   &              -0.107   \\
+            &             (0.079)   &             (0.097)   &             (0.079)   &             (0.096)   \\
+Age    &               0.079***&               0.096*  &               0.083***&               0.075   \\
+            &             (0.026)   &             (0.056)   &             (0.031)   &             (0.063)   \\
+Payoff      &               0.020   &               0.026   &               0.004   &               0.000   \\
+            &             (0.030)   &             (0.034)   &             (0.034)   &             (0.039)   \\
+Constant    &              -0.658*  &              -0.607   &              -0.592   &              -0.395   \\
+            &             (0.342)   &             (0.486)   &             (0.478)   &             (0.756)   \\
+School FE   &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE    &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer FE&                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.       &                0.14   &                0.21   &                0.31   &                0.37   \\
+Obs         &                 169   &                 169   &                 168   &                 168   \\
+AIC         &                 242   &                 258   &                 256   &                 270   \\
+BIC         &                 292   &                 355   &                 388   &                 445   \\
+		\bottomrule
+		\multicolumn{5}{l}{\footnotesize OLS estimation. Robust standard errors in parentheses.}\\
+		\multicolumn{5}{l}{\footnotesize  \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+	\end{tabular}
+	\label{tab:cheat_math_long_altruism}
+\end{table}

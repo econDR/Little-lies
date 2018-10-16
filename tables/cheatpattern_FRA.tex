@@ -1,0 +1,55 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Cheating patterns: the effect of French score conditional on Dice Diff}
+\begin{threeparttable}
+
+\begin{tabular}{l*{3}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)} &\multicolumn{1}{c}{(3)}   \\
+\midrule
+French score        &               0.381***&               0.467***&               0.363***\\
+                    &             (0.109)   &             (0.107)   &             (0.120)   \\
+Dice Diff=2 $\times$ French score&              -0.046   &              -0.046   &              -0.089   \\
+                    &             (0.136)   &             (0.136)   &             (0.135)   \\
+Dice Diff=3 $\times$ French score&              -0.055   &              -0.086   &              -0.074   \\
+                    &             (0.128)   &             (0.126)   &             (0.126)   \\
+Dice Diff=4 $\times$ French score&               0.139   &               0.103   &               0.147   \\
+                    &             (0.203)   &             (0.203)   &             (0.200)   \\
+Dice Diff=5 $\times$ French score&               0.256   &               0.249   &               0.262   \\
+                    &             (0.246)   &             (0.245)   &             (0.243)   \\
+Dice Diff=2         &               0.091   &               0.087   &               0.121   \\
+                    &             (0.087)   &             (0.088)   &             (0.086)   \\
+Dice Diff=3         &               0.098   &               0.115   &               0.115   \\
+                    &             (0.081)   &             (0.080)   &             (0.080)   \\
+Dice Diff=4         &              -0.053   &              -0.031   &              -0.057   \\
+                    &             (0.123)   &             (0.124)   &             (0.122)   \\
+Dice Diff=5         &              -0.066   &              -0.067   &              -0.068   \\
+                    &             (0.161)   &             (0.159)   &             (0.159)   \\
+Female              &              -0.045   &              -0.037   &              -0.048   \\
+                    &             (0.032)   &             (0.034)   &             (0.035)   \\
+Age                 &               0.048***&               0.025   &               0.020   \\
+                    &             (0.014)   &             (0.022)   &             (0.029)   \\
+Payoff              &               0.007   &               0.005   &               0.002   \\
+                    &             (0.014)   &             (0.014)   &             (0.014)   \\
+Dummies &&& \\
+Schools             &                 Yes   &                  No   &                  No   \\
+Grades              &                  No   &                 Yes   &                  No   \\
+Peer effects        &                  No   &                  No   &                 Yes   \\
+Interviewers        &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. R-sq.          &                       &                       &                       \\
+Obs                 &                2741   &                2741   &                2725   \\
+AIC                 &                3315   &                3326   &                3299   \\
+BIC                 &                3593   &                3569   &                3665   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\textit{Notes:} Dependent variable: MaxChoice. Margins from GLM for binomial family estimations (Logit link). Robust standard errors in parentheses, clustered at children level.
+\item The analysis is performed on all reported dice rolls; dice rolls in which Diff=0 (ties) are not included in the analysis. Reference category (omitted) is Dice Diff=1.
+
+\item \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:cheat_patterns}
+\end{table}

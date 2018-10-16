@@ -1,0 +1,41 @@
+\begin{table}[htbp] \centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{MeanRoll and MaxChoice stability over time}
+\begin{threeparttable}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{2}{c}{MeanRoll\tnote{1}}                   &\multicolumn{2}{c}{MaxChoice\tnote{2}}                  \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Time dummy          &              -0.266   &               0.205   &              -0.637   &               1.002   \\
+                    &             (0.189)   &             (0.300)   &             (0.435)   &             (0.780)   \\
+Female              &              -0.085   &              -0.080   &              -0.164   &              -0.155   \\
+                    &             (0.064)   &             (0.076)   &             (0.135)   &             (0.147)   \\
+Age                 &               0.098***&               0.050   &               0.222***&               0.080   \\
+                    &             (0.024)   &             (0.044)   &             (0.058)   &             (0.105)   \\
+Payoff              &               0.019   &               0.013   &               0.056   &               0.043   \\
+                    &             (0.023)   &             (0.027)   &             (0.050)   &             (0.051)   \\
+Constant            &              -0.635** &               0.141   &              -1.625** &              -0.031   \\
+                    &             (0.306)   &             (0.608)   &             (0.678)   &             (1.452)   \\
+School Dummies           &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies            &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies
+&                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. R-sq.          &               0.100   &               0.035   &                      &                       \\
+Obs                 &                 284   &                 284   &                 284   &                 284   \\
+AIC                 &                 407   &                 438   &                 362   &                 421   \\
+BIC                 &                 623   &                 759   &                 577   &                 757   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item \textit{Notes:} 
+\item[1] Dependent variable: MeanRoll, OLS estimations, robust standard errors in parentheses.
+\item[2] Dependent variable: MaxChoice, GLM for the binomial family estimations (Logit link), robust standard errors in parentheses.
+\item The time dummy is equal to 1 if the observation refers to s.y. 2016/17; 0 if it refers to s.y. 2015/16.
+\item \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:stability}
+\end{table}

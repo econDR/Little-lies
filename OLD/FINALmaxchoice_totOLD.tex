@@ -1,0 +1,60 @@
+\begin{table}[htbp]
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{MaxChoice and School performance, robustness check: Total score}
+\begin{threeparttable}
+\centering
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Total score         &               0.482***&               0.469***&               0.482***&               0.468***\\
+                    &             (0.147)   &             (0.149)   &             (0.151)   &             (0.151)   \\
+MaxChoice, baseline        &                       &                       &               0.211** &               0.186** \\
+                    &                       &                       &             (0.085)   &             (0.094)   \\
+Female              &              -0.041   &              -0.040   &              -0.038   &              -0.039   \\
+                    &             (0.033)   &             (0.036)   &             (0.033)   &             (0.035)   \\
+Age                 &               0.049***&               0.020   &               0.041***&               0.022   \\
+                    &             (0.014)   &             (0.030)   &             (0.014)   &             (0.030)   \\
+Payoff              &               0.007   &               0.003   &               0.004   &               0.001   \\
+                    &             (0.014)   &             (0.014)   &             (0.014)   &             (0.014)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. Pseudo R-sq.   &              -0.420   &   -0.600              & -0.552                & -0.621          \\
+Obs                 &                 168   &                 168   &                 168   &                 168   \\
+AIC                 &                 224   &                 254   &                 225   &                 256   \\
+BIC                 &                 346   &                 429   &                 350   &                 434   \\
+\midrule \midrule
+                    &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Total score         &               0.434***&               0.406***&               0.436***&               0.405***\\
+                    &             (0.151)   &             (0.149)   &             (0.154)   &             (0.150)   \\
+Altruism, baseline  &              -0.181** &              -0.227** &              -0.176** &              -0.228** \\
+                    &             (0.091)   &             (0.103)   &             (0.087)   &             (0.100)   \\
+MaxChoice, baseline       &                       &                       &               0.207** &               0.187** \\
+                    &                       &                       &             (0.081)   &             (0.090)   \\
+Female              &              -0.038   &              -0.027   &              -0.034   &              -0.026   \\
+                    &             (0.033)   &             (0.036)   &             (0.033)   &             (0.036)   \\
+Age                 &               0.048***&               0.022   &               0.040***&               0.025   \\
+                    &             (0.014)   &             (0.031)   &             (0.014)   &             (0.031)   \\
+Payoff              &               0.003   &              -0.001   &               0.000   &              -0.003   \\
+                    &             (0.014)   &             (0.014)   &             (0.014)   &             (0.014)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+Adj. Pseudo R-sq.   &           -0.429      & -0.620                &  -0.561               &  -0.629               \\
+Obs                 &                 168   &                 168   &                 168   &                 168   \\
+AIC                 &                 225   &                 256   &                 226   &                 257   \\
+BIC                 &                 350   &                 434   &                 354   &                 438   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item \textit{Notes:} Dependent variable: MaxChoice. Margins from GLM for binomial family estimations (Logit link). Robust standard errors in parentheses.
+\item \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:maxchoice_totaltr}
+\end{table}

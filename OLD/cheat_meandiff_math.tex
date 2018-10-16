@@ -1,0 +1,33 @@
+\begin{table}[!h]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Cheating patterns: effect of DiceDiff on MeanRoll}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+&\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Math score       &               0.492** &               0.616** &               0.546** &               0.688** \\
+&             (0.237)   &             (0.245)   &             (0.247)   &             (0.265)   \\
+		DiceDiff   &               0.315** &               0.347** &               0.327***&               0.325** \\
+&             (0.123)   &             (0.133)   &             (0.124)   &             (0.128)   \\
+Female      &              -0.091   &              -0.101   &              -0.099   &              -0.110   \\
+&             (0.076)   &             (0.092)   &             (0.077)   &             (0.089)   \\
+Age         &               0.059** &               0.029   &               0.077***&               0.026   \\
+&             (0.024)   &             (0.047)   &             (0.028)   &             (0.045)   \\
+Payoff      &               0.018   &               0.020   &               0.004   &              -0.002   \\
+&             (0.027)   &             (0.029)   &             (0.028)   &             (0.031)   \\
+Constant    &              -1.172***&              -0.448   &              -1.364***&              -1.284** \\
+&             (0.334)   &             (0.549)   &             (0.499)   &             (0.623)   \\
+School FE   &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class FE    &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer FE&                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.       &                0.14   &                0.20   &                0.30   &                0.37   \\
+Obs         &                 185   &                 185   &                 184   &                 184   \\
+AIC         &                 252   &                 271   &                 265   &                 278   \\
+BIC         &                 301   &                 371   &                 397   &                 458   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize OLS estmation. Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize  \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\label{tab:cheat_meandiff_math}
+\end{table}

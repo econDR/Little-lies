@@ -1,0 +1,56 @@
+\begin{table}[!h]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effect of School performance on MeanRoll: Total score}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+\multicolumn{5}{l}{Panel A: Benchmark model} \\
+&\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Total score &               0.924***&               1.008***&               1.012***&               1.048** \\
+            &             (0.333)   &             (0.355)   &             (0.358)   &             (0.413)   \\
+Female    &              -0.101   &              -0.117   &              -0.130   &              -0.134   \\
+            &             (0.079)   &             (0.096)   &             (0.081)   &             (0.095)   \\
+Age    &               0.092***&               0.096*  &               0.106***&               0.071   \\
+            &             (0.026)   &             (0.056)   &             (0.032)   &             (0.061)   \\
+Payoff      &               0.027   &               0.032   &               0.016   &               0.008   \\
+            &             (0.030)   &             (0.034)   &             (0.033)   &             (0.038)   \\
+Constant    &              -1.146***&              -0.962** &              -1.226***&              -0.759   \\
+            &             (0.331)   &             (0.467)   &             (0.462)   &             (0.676)   \\
+School Dummies   &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies    &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies&                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.       &                0.14   &                0.19   &                0.29   &                0.34   \\
+Obs         &                 169   &                 169   &                 168   &                 168   \\
+AIC         &                 240   &                 259   &                 259   &                 273   \\
+BIC         &                 283   &                 350   &                 384   &                 442   \\
+\midrule \midrule
+\multicolumn{5}{l}{Panel B: Including MeanRoll baseline} \\
+            &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Total score         &               0.916***&               0.991***&               1.022***&               1.039** \\
+                    &             (0.335)   &             (0.356)   &             (0.368)   &             (0.418)   \\
+MeanRoll, baseline  &               0.098   &               0.127   &               0.210** &               0.174   \\
+                    &             (0.089)   &             (0.095)   &             (0.097)   &             (0.118)   \\
+Female              &              -0.096   &              -0.114   &              -0.127   &              -0.134   \\
+                    &             (0.079)   &             (0.096)   &             (0.079)   &             (0.093)   \\
+Age                 &               0.082***&               0.095*  &               0.088***&               0.078   \\
+                    &             (0.026)   &             (0.057)   &             (0.031)   &             (0.061)   \\
+Payoff              &               0.025   &               0.032   &               0.012   &               0.007   \\
+                    &             (0.030)   &             (0.034)   &             (0.033)   &             (0.038)   \\
+Constant            &              -1.064***&              -0.941** &              -1.059** &              -0.786   \\
+                    &             (0.338)   &             (0.468)   &             (0.452)   &             (0.726)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.               &                0.14   &                0.20   &                0.31   &                0.36   \\
+Obs                 &                 169   &                 169   &                 168   &                 168   \\
+AIC                 &                 240   &                 259   &                 255   &                 272   \\
+BIC                 &                 287   &                 353   &                 383   &                 443   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize OLS estimation. Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize  \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\label{tab:cheat_total_long}
+\end{table}

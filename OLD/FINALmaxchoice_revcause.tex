@@ -1,0 +1,37 @@
+\begin{table}[!h]
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Inspecting reverse causality: effect of MaxChoice on Math performance}
+\begin{threeparttable}\centering
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+            &\multicolumn{2}{c}{Benchmark models}           &\multicolumn{2}{c}{Including baseline outcome} \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+            &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+MaxChoice, baseline &              -0.018   &               0.035   &               0.005   &               0.008   \\
+                    &             (0.058)   &             (0.054)   &             (0.052)   &             (0.050)   \\
+Math, baseline      &                       &                       &               0.507***&               0.589***\\
+                    &                       &                       &             (0.078)   &             (0.080)   \\
+Female              &              -0.007   &               0.002   &              -0.018   &              -0.009   \\
+                    &             (0.024)   &             (0.023)   &             (0.021)   &             (0.021)   \\
+Age                 &              -0.005   &               0.025   &              -0.006   &               0.013   \\
+                    &             (0.010)   &             (0.017)   &             (0.008)   &             (0.013)   \\
+Payoff              &              -0.005   &              -0.006   &               0.001   &              -0.003   \\
+                    &             (0.007)   &             (0.007)   &             (0.007)   &             (0.006)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                 Yes   &                 Yes   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.               &                       &                       &                       &                       \\
+Obs                 &                 168   &                 168   &                 164   &                 164   \\
+AIC                 &                 225   &                 252   &                 221   &                 248   \\
+BIC                 &                 346   &                 421   &                 345   &                 419   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\footnotesize
+\item \textit{Notes:} Dependent variable: Math score. OLS estimation. Robust standard errors in parentheses.
+\item \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:revcause_maxchoice}
+\end{table}

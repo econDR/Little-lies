@@ -1,0 +1,31 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Cheating patterns: effect of reward size (average) on MeanRoll}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+            &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Dice diff (avg)   &               0.323***&               0.370***&               0.334***&               0.346***\\
+            &             (0.122)   &             (0.131)   &             (0.121)   &             (0.127)   \\
+Female      &              -0.089   &              -0.094   &              -0.100   &              -0.104   \\
+            &             (0.077)   &             (0.093)   &             (0.080)   &             (0.091)   \\
+Age         &               0.057** &               0.050   &               0.077***&               0.049   \\
+            &             (0.024)   &             (0.049)   &             (0.028)   &             (0.045)   \\
+Payoff      &               0.017   &               0.019   &               0.001   &              -0.007   \\
+            &             (0.027)   &             (0.029)   &             (0.028)   &             (0.031)   \\
+Constant    &              -0.835***&              -0.264   &              -1.011** &              -1.210*  \\
+            &             (0.289)   &             (0.543)   &             (0.472)   &             (0.612)   \\
+School Dummies   &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies    &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies&                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.       &                0.12   &                0.17   &                0.28   &                0.34   \\
+Obs         &                 185   &                 185   &                 184   &                 184   \\
+AIC         &                 255   &                 275   &                 269   &                 283   \\
+BIC         &                 300   &                 372   &                 397   &                 460   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize OLS estmation. Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize  \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\label{tab:cheat_meandiff}
+\end{table}

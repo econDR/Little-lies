@@ -1,0 +1,22 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{table}[!h]
+\centering
+\caption{T-tests: Follow-up and baseline values of target variables}
+
+\begin{tabular}{l*{3}{D{.}{.}{-1}}} 
+\toprule
+            &\multicolumn{2}{l}{Diff Wave 2 - Wave 1 (t-stat)}         \\
+\midrule
+MeanRoll    &     -0.0648         &     (-1.34) \\
+MaxChoice	&     -0.0354         &     (-1.53) \\
+Altruism  	&     -0.0462\sym{*}  &     (-2.53) \\
+Math 		&      0.0386\sym{*}  &      (2.46) \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\multicolumn{3}{l}{\footnotesize Note: \enquote{exp terms} is term 2 for wave 1 and term 3 for wave 2.} \\
+\end{tabular}
+\label{tab:ttests}
+\end{table}
+}

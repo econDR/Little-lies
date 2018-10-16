@@ -1,0 +1,60 @@
+\begin{table}[!h]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effect of Altruism and School performance on MeanRoll: Total score}
+\begin{tabular}{l*{4}{D{.}{.}{-1}}}
+\toprule
+\multicolumn{5}{l}{Panel A: Benchmark model} \\
+            &\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+            \midrule
+Total score         &               0.863** &               0.905** &               0.909** &               0.917** \\
+                    &             (0.345)   &             (0.372)   &             (0.374)   &             (0.428)   \\
+Altruism, baseline  &              -0.362   &              -0.461*  &              -0.393*  &              -0.461   \\
+                    &             (0.221)   &             (0.253)   &             (0.236)   &             (0.302)   \\
+Female              &              -0.095   &              -0.096   &              -0.122   &              -0.106   \\
+                    &             (0.078)   &             (0.096)   &             (0.080)   &             (0.097)   \\
+Age                 &               0.091***&               0.097*  &               0.102***&               0.072   \\
+                    &             (0.026)   &             (0.056)   &             (0.032)   &             (0.061)   \\
+Payoff              &               0.023   &               0.027   &               0.009   &               0.002   \\
+                    &             (0.030)   &             (0.034)   &             (0.034)   &             (0.039)   \\
+Constant            &              -0.938** &              -0.738   &              -0.949*  &              -0.643   \\
+                    &             (0.361)   &             (0.490)   &             (0.501)   &             (0.778)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.               &                0.15   &                0.21   &                0.30   &                0.36   \\
+Obs                 &                 169   &                 169   &                 168   &                 168   \\
+AIC                 &                 239   &                 257   &                 258   &                 271   \\
+BIC                 &                 286   &                 351   &                 386   &                 443   \\
+\midrule \midrule
+\multicolumn{5}{l}{Panel B: Including MeanRoll baseline} \\
+&\multicolumn{1}{c}{(1)}   &\multicolumn{1}{c}{(2)}   &\multicolumn{1}{c}{(3)}   &\multicolumn{1}{c}{(4)}   \\
+\midrule
+Total score         &               0.853** &               0.883** &               0.922** &               0.904** \\
+                    &             (0.346)   &             (0.372)   &             (0.381)   &             (0.432)   \\
+Altruism, baseline  &              -0.367*  &              -0.477*  &              -0.385*  &              -0.476   \\
+                    &             (0.216)   &             (0.250)   &             (0.226)   &             (0.300)   \\
+MeanRoll, baseline  &               0.101   &               0.135   &               0.208** &               0.180   \\
+                    &             (0.086)   &             (0.092)   &             (0.093)   &             (0.111)   \\
+Female              &              -0.090   &              -0.092   &              -0.119   &              -0.105   \\
+                    &             (0.078)   &             (0.096)   &             (0.078)   &             (0.095)   \\
+Age                 &               0.080***&               0.096*  &               0.084***&               0.079   \\
+                    &             (0.026)   &             (0.056)   &             (0.031)   &             (0.061)   \\
+Payoff              &               0.021   &               0.026   &               0.006   &               0.001   \\
+                    &             (0.030)   &             (0.034)   &             (0.034)   &             (0.039)   \\
+Constant            &              -0.851** &              -0.707   &              -0.790   &              -0.534   \\
+                    &             (0.363)   &             (0.488)   &             (0.497)   &             (0.770)   \\
+School Dummies      &                 Yes   &                  No   &                 Yes   &                  No   \\
+Class Dummies       &                  No   &                 Yes   &                  No   &                 Yes   \\
+Interviewer Dummies &                  No   &                  No   &                 Yes   &                 Yes   \\
+\midrule
+R-sq.               &                0.16   &                0.22   &                0.32   &                0.37   \\
+Obs                 &                 169   &                 169   &                 168   &                 168   \\
+AIC                 &                 239   &                 257   &                 254   &                 269   \\
+BIC                 &                 290   &                 354   &                 385   &                 444   \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize OLS estimation, Robust standard errors in parentheses.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\label{tab:cheat_total_long_altruism}
+\end{table}
